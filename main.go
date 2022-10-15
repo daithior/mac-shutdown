@@ -12,8 +12,7 @@ import (
 // Where ?
 
 func executeShellCommand() string {
-	cmd := exec.Command("uname")
-	//cmd := exec.Command("shutdown", "-h", "now")
+	cmd := exec.Command("shutdown", "-h", "now")
 	stout, err := cmd.Output()
 
 	if err != nil {
